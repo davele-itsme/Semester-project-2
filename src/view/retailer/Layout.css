@@ -1,0 +1,130 @@
+.menu:hover, .menu:showing, .menu-item:hover, .menu-item:checked, .inventoryButton:hover, #addEmployeeButton:hover, #addButton:hover, #backButton:hover, #addItemStockButton:hover, #sendRequestButton:hover, #addProductRequestButton:hover, #sellButton:hover, #openDeliveryItemButton:hover  {
+    -fx-background-color: #1ABC9C !important;
+    -fx-text-fill: white;
+}
+
+#editEmployeeButton:hover, #editItemStockButton:hover, #editQuantityButton:hover {
+    -fx-background-color: #FACD06 !important;
+    -fx-text-fill: white;
+}
+
+#removeEmployeeButton:hover, #removeItemStockButton:hover, #removeProductRequestButton:hover {
+    -fx-background-color: #DD4B39 !important;
+    -fx-text-fill: white;
+}
+
+#close:hover, #minimize:hover, #settings:hover, #help:hover, #messenger:hover {
+    -fx-scale-x: 1.15;
+    -fx-scale-y: 1.15;
+}
+
+.column-header{
+    -fx-background-color: #1ABC9C;
+    -fx-border-color: white;
+}
+
+#homeButton:hover, #inventoryButton:hover, #employeeButton:hover, #productRequestButton:hover, #deliveryButton:hover, #salesButton:hover{
+    -fx-text-fill: white;
+}
+
+.text-field, .choice-box, .date-picker {
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: #2C363B;
+}
+
+.text-area {
+    -fx-background-color: white;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #2C363B !important;
+}
+
+.date-picker .text-field {
+    -fx-border-color: transparent;
+}
+
+.date-picker, #actualPicture {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.data0.chart-pie { -fx-pie-color: #2E4756; }
+.data1.chart-pie { -fx-pie-color: #FE7211; }
+.data2.chart-pie { -fx-pie-color: cornflowerblue; }
+
+.list-view .list-cell {
+    -fx-border-style: solid;
+    -fx-border-color: black;
+    -fx-border-color: #E9EDF0;
+    -fx-border-width: 7px 305px 7px 0px;
+    -fx-padding: 15px 15px 15px 15px;
+    -fx-font-size: 15px;
+}
+
+.list-view .list-cell:empty {
+    -fx-opacity: 0;
+}
+
+.list-view{
+    -fx-background-color: #E9EDF0;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color :transparent;
+    -fx-border-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+}
+
+
+.scroll-bar:horizontal .increment-button ,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 0.0 10.0 0.0;
+
+}
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+
+}
+
+ .scroll-bar .increment-arrow,
+ .scroll-bar .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.15em 0.0;
+}
+
+ .scroll-bar:vertical .increment-arrow,
+ .scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";
+    -fx-padding :0.0 0.15em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color :derive(black,90.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color :derive(#4D4C4F,10.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+.table-row-cell:selected, .list-view .list-cell:selected{
+    -fx-background-color: #1ABC9C !important;
+    -fx-text-fill: black;
+}
+
+
