@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="800.0" prefWidth="1200.0" stylesheets="@../../Layout.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.hq.controlRetailer.deliveryRetailer.DeliveryMainRTView">
+   <children>
+      <BorderPane prefHeight="800.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="50.0" prefWidth="1200.0" style="-fx-background-color: #F7FAFB; -fx-border-color: #E2E4E4;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="53.0" layoutY="15.0" text="HQ Management Tool">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="actualPicture" layoutX="5.0" layoutY="5.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #B579CF;">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../pictures/delivery.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </top>
+         <left>
+            <Pane prefHeight="779.0" prefWidth="259.0" style="-fx-background-color: #2C363B;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="homeButton" layoutY="76.0" mnemonicParsing="false" onAction="#onDashboardClicked" prefHeight="40.0" prefWidth="259.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="#dddddd">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="30.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pictures/home.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="inventoryButton" layoutY="126.0" mnemonicParsing="false" onAction="#onInventoryClicked" prefHeight="40.0" prefWidth="259.0" style="-fx-background-color: transparent;" text="Inventory" textFill="#dddddd">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="employeeButton" layoutY="176.0" mnemonicParsing="false" onAction="#onEmployeeClicked" prefHeight="40.0" prefWidth="259.0" style="-fx-background-color: transparent;" text="Employee" textFill="#dddddd">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="deliveryButton" layoutY="226.0" mnemonicParsing="false" onAction="#onDeliveryClicked" prefHeight="40.0" prefWidth="259.0" style="-fx-background-color: #B579CF;" text="Delivery" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="30.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pictures/inventory.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="30.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pictures/businessman.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="28.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../retailer/pictures/delivery.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="110.0" layoutY="50.0" style="-fx-background-color: #B579CF;" text="Retailer" textFill="WHITE" />
+               </children>
+               <BorderPane.margin>
+                  <Insets left="50.0" />
+               </BorderPane.margin>
+            </Pane>
+         </left>
+         <bottom>
+            <Pane prefHeight="75.0" prefWidth="1200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <TableView fx:id="deliveryTableView" fixedCellSize="0.0" prefHeight="650.0" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="iDCol" prefWidth="313.3" text="ID" />
+                  <TableColumn fx:id="requestFromCol" prefWidth="313.3" text="Request sent from" />
+                  <TableColumn fx:id="dateCol" prefWidth="313.3" text="Date" />
+                  <TableColumn fx:id="statusCol" prefWidth="313.3" text="Status" />
+                  <TableColumn fx:id="totalItemsCol" prefWidth="313.3" text="Total items" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <BorderPane.margin>
+                  <Insets left="56.0" right="56.0" top="160.0" />
+               </BorderPane.margin>
+            </TableView>
+         </center>
+      </BorderPane>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="804.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="close" fitHeight="14.0" fitWidth="14.0" layoutX="765.0" layoutY="15.0" onMouseClicked="#onCloseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../pictures/close.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="minimize" fitHeight="16.0" fitWidth="16.0" layoutX="729.0" layoutY="15.0" onMouseClicked="#onMinimizeClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../pictures/minus-symbol.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="259.0" style="-fx-background-color: #2C363B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" />
+      <Pane prefHeight="75.0" prefWidth="312.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Pane prefHeight="200.0" prefWidth="50.0" style="-fx-background-color: #2B2B2B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Pane layoutY="50.0" onMouseClicked="#onHQClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-background-radius: 5px;">
+               <children>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pictures/base-with-flag.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="105.0" onMouseClicked="#onWarehouseClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-background-radius: 5px;">
+               <children>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="13.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pictures/warehouse-with-boxes.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="160.0" onMouseClicked="#onRetailerClicked" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #B579CF; -fx-background-radius: 5px;">
+               <children>
+                  <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pictures/shop.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Button fx:id="openDeliveryItemButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onOpenDeliveryItemClicked" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 5px;" text="Open " AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="56.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="50.0" layoutY="50.0" prefHeight="50.0" prefWidth="941.0" style="-fx-background-color: #B579CF;" AnchorPane.leftAnchor="309.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
+         <children>
+            <Label layoutX="50.0" layoutY="8.0" text="Deliveries">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="20.0" layoutY="20.0" prefHeight="138.0" prefWidth="200.0" AnchorPane.leftAnchor="309.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
+         <children>
+            <Label layoutX="56.0" layoutY="83.0" text="Deliveries from:" />
+            <Label layoutX="150.0" layoutY="83.0" text="Warehouse" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

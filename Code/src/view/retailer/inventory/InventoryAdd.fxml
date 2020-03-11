@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="900.0" prefWidth="1300.0" stylesheets="@../Layout.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.retailer.inventory.InventoryAddView">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="259.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
+         <center>
+            <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="100.0" text="Basic" textFill="#1abc9c">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="600.0" right="800.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <TextField fx:id="nameField" maxWidth="-Infinity" prefHeight="25.0" prefWidth="225.0">
+                     <StackPane.margin>
+                        <Insets bottom="500.0" right="500.0" />
+                     </StackPane.margin>
+                  </TextField>
+                  <TextField fx:id="iDField" maxWidth="-Infinity" prefHeight="25.0" prefWidth="225.0">
+                     <StackPane.margin>
+                        <Insets bottom="420.0" right="500.0" />
+                     </StackPane.margin>
+                  </TextField>
+                  <Label prefHeight="17.0" prefWidth="80.0" text="Item Name">
+                     <StackPane.margin>
+                        <Insets bottom="500.0" right="820.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="emptyNameLabel" prefWidth="150.0" text="Field cannot be empty" textFill="#dd4b39" visible="false">
+                     <StackPane.margin>
+                        <Insets bottom="500.0" right="80.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <CheckBox fx:id="canExpireCheckBox" mnemonicParsing="false" onAction="#canExpireClicked" prefWidth="80.0">
+                     <StackPane.margin>
+                        <Insets right="820.0" />
+                     </StackPane.margin>
+                  </CheckBox>
+                  <Label prefHeight="30.0" prefWidth="100.0" text="Expiration" textFill="#1abc9c">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="100.0" right="800.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <DatePicker fx:id="expiryDatePicker" disable="true" prefHeight="25.0" prefWidth="225.0">
+                     <StackPane.margin>
+                        <Insets right="500.0" top="80.0" />
+                     </StackPane.margin>
+                  </DatePicker>
+                  <Label prefWidth="80.0" text="Expiry date">
+                     <StackPane.margin>
+                        <Insets right="820.0" top="80.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label text="Expirable item?">
+                     <StackPane.margin>
+                        <Insets right="700.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="errorExpiryDateLabel" prefWidth="150.0" text="You need to choose expiry date" textFill="#dd4b39" visible="false">
+                     <StackPane.margin>
+                        <Insets right="80.0" top="80.0" />
+                     </StackPane.margin></Label>
+                  <Label prefHeight="30.0" prefWidth="150.0" text="Cost and Price" textFill="#1abc9c">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="600.0" left="600.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <TextField fx:id="priceField" maxWidth="-Infinity" prefHeight="25.0" prefWidth="225.0">
+                     <StackPane.margin>
+                        <Insets bottom="500.0" left="850.0" />
+                     </StackPane.margin>
+                  </TextField>
+                  <Label prefWidth="80.0" text="Cost">
+                     <StackPane.margin>
+                        <Insets bottom="500.0" left="530.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label text="kr.">
+                     <StackPane.margin>
+                        <Insets bottom="500.0" left="1100.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="errorPriceLabel" prefWidth="250.0" text="Only numbers greater or equal to 0 are allowed" textFill="#dd4b39" visible="false">
+                     <StackPane.margin>
+                        <Insets bottom="500.0" left="1150.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <TextField fx:id="quantityField" maxWidth="-Infinity" prefHeight="25.0" prefWidth="225.0">
+                     <StackPane.margin>
+                        <Insets left="850.0" top="80.0" />
+                     </StackPane.margin>
+                  </TextField>
+                  <TextField fx:id="minStockField" maxWidth="-Infinity" prefHeight="25.0" prefWidth="225.0">
+                     <StackPane.margin>
+                        <Insets left="850.0" top="160.0" />
+                     </StackPane.margin>
+                  </TextField>
+                  <TextField fx:id="maxStockField" maxWidth="-Infinity" prefHeight="25.0" prefWidth="225.0">
+                     <StackPane.margin>
+                        <Insets left="850.0" top="240.0" />
+                     </StackPane.margin>
+                  </TextField>
+                  <Label prefWidth="80.0" text="Min stock">
+                     <StackPane.margin>
+                        <Insets left="530.0" top="160.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label prefWidth="80.0" text="Max stock">
+                     <StackPane.margin>
+                        <Insets left="530.0" top="240.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="150.0" text="Inventory" textFill="#1abc9c">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="100.0" left="600.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label prefWidth="80.0" text="Quantity">
+                     <StackPane.margin>
+                        <Insets left="530.0" top="80.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="errorQuantityLabel" prefWidth="250.0" text="Only integers greater or equal to 0 are allowed" textFill="#dd4b39" visible="false">
+                     <StackPane.margin>
+                        <Insets left="1150.0" top="80.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="errorMinStockLabel" maxWidth="-Infinity" prefWidth="250.0" text="Only integers greater or equal to 0 are allowed" textFill="#dd4b39" visible="false">
+                     <StackPane.margin>
+                        <Insets left="1150.0" top="160.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label fx:id="errorMaxStockLabel" maxWidth="-Infinity" prefWidth="250.0" text="Only integers greater or equal to 0 are allowed" textFill="#dd4b39" visible="false">
+                     <StackPane.margin>
+                        <Insets left="1150.0" top="240.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Button fx:id="addButton" mnemonicParsing="false" onAction="#onAddClicked" style="-fx-background-color: white; -fx-border-color: #1ABC9C; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="ADD">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <StackPane.margin>
+                        <Insets right="250.0" top="400.0" />
+                     </StackPane.margin>
+                  </Button>
+                  <Button fx:id="backButton" mnemonicParsing="false" onAction="#onBackClicked" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 5px;" text="BACK">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <StackPane.margin>
+                        <Insets left="250.0" top="400.0" />
+                     </StackPane.margin>
+                  </Button>
+                  <Label prefHeight="17.0" prefWidth="80.0" text="ID/Code">
+                     <StackPane.margin>
+                        <Insets bottom="420.0" right="820.0" />
+                     </StackPane.margin>
+                  </Label>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="1200.0" style="-fx-background-color: #F7FAFB; -fx-border-color: #E2E4E4;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="53.0" layoutY="15.0" text="Retailer Management Tool">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Pane fx:id="actualPicture" layoutX="5.0" layoutY="5.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #1ABC9C;">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pictures/inventory.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutY="48.0" prefHeight="852.0" prefWidth="259.0" style="-fx-background-color: #2C363B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Button fx:id="homeButton" layoutY="52.0" mnemonicParsing="false" onAction="#onDashboardClicked" prefHeight="40.0" prefWidth="259.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="30.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/home.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="inventoryButton" layoutY="102.0" mnemonicParsing="false" onAction="#onInventoryClicked" prefHeight="40.0" prefWidth="259.0" style="-fx-background-color: #1ABC9C;" text="Inventory" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="employeeButton" layoutY="152.0" mnemonicParsing="false" onAction="#onEmployeeClicked" prefHeight="40.0" prefWidth="259.0" style="-fx-background-color: transparent;" text="Employee" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="productRequestButton" layoutY="202.0" mnemonicParsing="false" onAction="#onProductRequestClicked" prefHeight="40.0" prefWidth="259.0" style="-fx-background-color: transparent;" text="Request" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="deliveryButton" layoutY="252.0" mnemonicParsing="false" onAction="#onDeliveryClicked" prefHeight="40.0" prefWidth="259.0" style="-fx-background-color: transparent;" text="Delivery" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="30.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/inventory.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="30.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/businessman.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="28.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/package.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="28.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/delivery.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="salesButton" layoutY="302.0" mnemonicParsing="false" onAction="#onSalesClicked" prefHeight="40.0" prefWidth="259.0" style="-fx-background-color: transparent;" text="Sales" textFill="#dddddd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="30.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/sales.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="20.0" layoutY="20.0" prefHeight="75.0" prefWidth="259.0" style="-fx-background-color: #2C363B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="75.0" prefWidth="259.0">
+               <children>
+                  <ImageView fx:id="messenger" fitHeight="25.0" fitWidth="25.0" onMouseClicked="#onMessengerClicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../warehouse/pictures/messenger.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </Pane>
+      <Pane layoutX="20.0" layoutY="20.0" prefHeight="50.0" prefWidth="804.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="close" fitHeight="14.0" fitWidth="14.0" layoutX="765.0" layoutY="15.0" onMouseClicked="#onCloseClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/close.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="minimize" fitHeight="16.0" fitWidth="16.0" layoutX="729.0" layoutY="15.0" onMouseClicked="#onMinimizeClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/minus-symbol.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="941.0" style="-fx-background-color: #1ABC9C;" AnchorPane.leftAnchor="259.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
+         <children>
+            <Label layoutX="50.0" layoutY="8.0" text="Store stock item">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
