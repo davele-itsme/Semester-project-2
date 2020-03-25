@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cdd7870b-dc34-4c12-86c0-822e003a6517" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SEP2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SEP2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SEP2/Run.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SEP2/Run.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Run.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +27,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
-  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -37,9 +35,11 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/postgresql-9.4-1202.jdbc42.jar!/" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -51,6 +51,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.RunApplicationRT">
+    <configuration name="DataBase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jdbc.DataBase" />
+      <module name="SEP2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Run" />
       <module name="SEP2" />
@@ -72,41 +85,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="network.Server.Server" />
       <module name="SEP2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Testing.*" />
+          <option name="PATTERN" value="network.Server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Testing" />
-      <option name="MAIN_CLASS_NAME" value="Testing.ValidationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidationTest.onlyLettersAndNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SEP2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Testing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Testing" />
-      <option name="MAIN_CLASS_NAME" value="Testing.ValidationTest" />
-      <option name="METHOD_NAME" value="onlyLettersAndNumbers" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ValidationTest" />
-      <item itemvalue="JUnit.ValidationTest.onlyLettersAndNumbers" />
       <item itemvalue="Application.Run" />
+      <item itemvalue="Application.DataBase" />
+      <item itemvalue="Application.Server" />
       <item itemvalue="Application.RunRT" />
       <item itemvalue="Application.RunApplicationRT" />
     </list>
@@ -115,8 +110,8 @@
         <item itemvalue="Application.RunApplicationRT" />
         <item itemvalue="Application.RunRT" />
         <item itemvalue="Application.Run" />
-        <item itemvalue="JUnit.ValidationTest.onlyLettersAndNumbers" />
-        <item itemvalue="JUnit.ValidationTest" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.DataBase" />
       </list>
     </recent_temporary>
   </component>
@@ -178,97 +173,29 @@
     </history-entry>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1583916503392">
+    <state x="740" y="296" key="FileChooserDialogImpl" timestamp="1583940299554">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583916503392" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1583916503392">
+    <state x="740" y="296" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1583940299554" />
+    <state width="1877" height="78" key="GridCell.Tab.0.bottom" timestamp="1583945173832">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583916503392" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1583916503392">
+    <state width="1877" height="78" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583945173832" />
+    <state width="1877" height="78" key="GridCell.Tab.0.center" timestamp="1583945173832">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583916503392" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1583916503392">
+    <state width="1877" height="78" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583945173832" />
+    <state width="1877" height="78" key="GridCell.Tab.0.left" timestamp="1583945173831">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583916503392" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>gson-2.8.5</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>SEP2</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>gson-2.8.5</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <state width="1877" height="78" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583945173831" />
+    <state width="1877" height="78" key="GridCell.Tab.0.right" timestamp="1583945173832">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="78" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583945173832" />
+    <state x="461" y="183" key="SettingsEditor" timestamp="1583940302275">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="183" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1583940302275" />
   </component>
 </project>

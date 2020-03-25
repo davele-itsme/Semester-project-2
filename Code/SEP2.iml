@@ -30,5 +30,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="postgresql-9.4-1202.jdbc42" level="application" />
   </component>
 </module>
