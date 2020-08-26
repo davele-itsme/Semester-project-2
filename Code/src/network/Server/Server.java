@@ -30,7 +30,7 @@ public class    Server {
      */
     public static void main(String[] args) throws IOException {
 
-            ServerSocket welcomeSocket = new ServerSocket(PORT);
+        ServerSocket welcomeSocket = new ServerSocket(PORT);
         System.out.println("Starting server...");
         DataBaseModel dataBaseModel = new DataBaseModel();
         ReadWrite readWrite = new ReadWrite(dataBaseModel);
