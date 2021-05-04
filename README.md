@@ -76,7 +76,7 @@ Documentation is located in `documentation` folder. SCRUM and UP framework relat
 
 If you want to create tables with already existing data to test the system, please follow these guidelines
 
-Set up tables:
+#### Set up tables:
 1. Open PgAdmin
 2. Create a new database
 3. Go into src/jdbc/ and open DataBaseModel
