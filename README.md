@@ -1,7 +1,9 @@
 <!-- INTRODUCTION -->
 <br />
 <p align="center">
+    <a href="https://drive.google.com/file/d/1ibmIm21KvMW_6VOI1cBgHkeRLEUMgqc1/view?usp=sharing">
     <img src="https://user-images.githubusercontent.com/42817904/117049270-38461400-ad14-11eb-97e8-ddc5c280ed77.png"/>
+    </a>
   <h2 align="center">WAREHOUSE MANAGEMENT SYSTEM</h2>
   <p align="center">
     JAVA Desktop platform, which allows retailers, warehouses and headquarters better track inventory, employees and communicate between each entity.
