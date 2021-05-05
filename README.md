@@ -6,7 +6,7 @@
   <p align="center">
     JAVA Desktop platform, which allows retailers, warehouses and headquarters better track inventory, employees and communicate between each entity.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://drive.google.com/file/d/1ibmIm21KvMW_6VOI1cBgHkeRLEUMgqc1/view?usp=sharing"><strong>Explore the project report »</strong></a>
     <br />
   </p>
 </p>
